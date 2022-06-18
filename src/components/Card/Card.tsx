@@ -5,7 +5,7 @@ import {ICardProps} from "./Card.props";
 const Card: FC<ICardProps> = ({cardItem, ...props}) => {
     return (
         <Styled.Card >
-            <Styled.Img url={cardItem.url}/>
+           <img src={cardItem.url} alt={cardItem.url}/>
         </Styled.Card>
     );
 };

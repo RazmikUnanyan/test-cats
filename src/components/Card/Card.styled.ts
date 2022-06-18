@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-interface Props {
-    url: string
-}
-
 export const Card = styled.div`
+  display: inline;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background: var(--gray);
   
-`
-
-export const Img = styled.img<Props>`
-  width: 200px;
-  height: 200px;
-  margin: 15px;
-  border-radius: 10px;
-  background-size: contain;
-  background-position: center;
-  background:url(${(props) => props.url});
+  & img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
 `

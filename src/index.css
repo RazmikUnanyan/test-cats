@@ -13,5 +13,6 @@ code {
 }
 
 :root {
-  --gray: #e0e0e0;
+  --gray: rgba(224, 224, 224, 0.49);
+  --primary: #43bcee;
 }

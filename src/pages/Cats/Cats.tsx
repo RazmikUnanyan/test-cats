@@ -1,4 +1,4 @@
-import React, {FC, useMemo, useState} from 'react';
+import React, {FC, useEffect, useMemo, useState} from 'react';
 import * as Styled from './Cats.slyled';
 import {useGetCatsQuery} from "../../redux/apiSlice";
 import {useParams} from "react-router-dom";
@@ -7,6 +7,11 @@ import Button from "../../components/Button/Button";
 
 const Cats: FC = () => {
     let {categoryId} = useParams()
+
+    useEffect(()=>{
+        setLimit(10)
+    }, [categoryId])
+
     const [page, setPage] = useState<number>(1)
     let [limit, setLimit] = useState<number>(10)
 

@@ -23,6 +23,10 @@ export const Sidebar = styled.nav`
     & a:hover {
       color: var(--primary);
     }
+
+    & a:active {
+      color: var(--primary);
+    }
   }
 `
 

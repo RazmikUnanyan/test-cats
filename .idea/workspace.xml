@@ -4,19 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="449f5e20-19bd-4483-9f55-cd753c5bba67" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/interface/_IStore.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/apiSlice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
+    <list default="true" id="449f5e20-19bd-4483-9f55-cd753c5bba67" name="Changes" comment="add: catsApi">
+      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card/Card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interface/ICategories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Content/Content.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Content/Content.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Content/Content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Layout.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Layout.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Sidebar/Sidebar.props.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Sidebar/Sidebar.styled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/layout/Sidebar/Sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Cats/Cats.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interface/Cats.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interface/ICats.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/apiSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/apiSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/macbook/Desktop/test-cats",
+    "last_opened_file_path": "/Users/macbook/Desktop/test-cats/src/layout/Content",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,7 +62,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/layout/Content" />
+      <recent name="$PROJECT_DIR$/src/layout/Sidebar" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Card" />
+      <recent name="$PROJECT_DIR$/src/pages/Cats" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -66,7 +83,7 @@
       <updated>1655539142545</updated>
       <workItem from="1655539144395" duration="128000" />
       <workItem from="1655539283317" duration="25000" />
-      <workItem from="1655539362948" duration="1974000" />
+      <workItem from="1655539362948" duration="9499000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655539765309</created>
@@ -75,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655539765309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add: catsApi">
+      <created>1655541663803</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655541663803</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add: catsApi" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: catsApi" />
   </component>
 </project>

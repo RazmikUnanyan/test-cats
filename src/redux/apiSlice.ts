@@ -1,5 +1,6 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
-import {ICatsData, ICatsRequestModel} from "../interface/Cats";
+import {ICatsData, ICatsRequestModel} from "../interface/ICats";
+import {ICategories} from "../interface/ICategories";
 
 const BASE_API_URL = "https://api.thecatapi.com/v1"
 
@@ -12,7 +13,7 @@ export const catsApi = createApi({
             query: ({limit = 10, page = 1, categoryId=1}) =>
                 `images/search?limit=${limit}&page=${page}&category_ids=${categoryId}`,
         }),
-        getCategories: builder.query({
+        getCategories: builder.query <ICategories[], void>({
             query: () =>
                 `categories`,
         }),

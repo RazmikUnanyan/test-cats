@@ -1,20 +1,18 @@
 import React from 'react';
-import {useGetCatsQuery} from "./store/apiSlice";
+import {Routes, Route,} from "react-router-dom";
+import {withLayout} from "./layout/Layout";
+import Cats from "./pages/Cats/Cats";
 
 function App() {
 
-    const model = {
-        limit: 10,
-        page: 1,
-        categoryId: 1,
-    }
-    const {data = [], isLoading, isError} = useGetCatsQuery(model);
-console.log(data)
+
     return (
-        <div className="App">
-            hi
-        </div>
+        <Routes>
+            <Route path="/">
+                <Route path=":categoryId" element={<Cats/>}/>
+            </Route>
+        </Routes>
     );
 }
 
-export default App;
+export default withLayout(App);

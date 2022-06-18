@@ -1,8 +1,4 @@
-
-export interface ICategories {
-    id: number,
-    name: string
-}
+import {ICategories} from "./ICategories";
 
 export interface ICatsData {
     breeds: [];
@@ -16,5 +12,5 @@ export interface ICatsData {
 export interface ICatsRequestModel {
     limit: number,
     page: number,
-    categoryId: number,
+    categoryId: string | undefined ,
 }

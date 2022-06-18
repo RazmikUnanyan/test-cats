@@ -1,13 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {useGetCatsQuery} from "./store/apiSlice";
 
 function App() {
-  return (
-    <div className="App">
-     hi
-    </div>
-  );
+
+    const model = {
+        limit: 10,
+        page: 1,
+        categoryId: 1,
+    }
+    const {data = [], isLoading, isError} = useGetCatsQuery(model);
+console.log(data)
+    return (
+        <div className="App">
+            hi
+        </div>
+    );
 }
 
 export default App;

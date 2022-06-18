@@ -8,7 +8,7 @@ import Button from "../../components/Button/Button";
 const Cats: FC = () => {
     let {categoryId} = useParams()
 
-    useEffect(()=>{
+    useEffect(() => {
         setLimit(10)
     }, [categoryId])
 
@@ -25,16 +25,25 @@ const Cats: FC = () => {
 
     return (
         <Styled.CardWrap>
-            <Styled.CatsWrap>
-            {
-                data.map(cats => (
-                    <Card cardItem={cats} key={cats.id}/>
-                ))
-            }
-            </Styled.CatsWrap>
-            <Button onClick={() => setLimit(limit += 10)}>
-                show more
-            </Button>
+            {isLoading && (
+                <Styled.CatsWrap>
+                    Loading...
+                </Styled.CatsWrap>
+            )}
+            {!isLoading && (
+                <>
+                    <Styled.CatsWrap>
+                        {
+                            data.map(cats => (
+                                <Card cardItem={cats} key={cats.id}/>
+                            ))
+                        }
+                    </Styled.CatsWrap>
+                    <Button onClick={() => setLimit(limit += 10)}>
+                        show more
+                    </Button>
+                </>
+            )}
         </Styled.CardWrap>
     );
 };

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="449f5e20-19bd-4483-9f55-cd753c5bba67" name="Changes" comment="feat: Cats, Button">
-      <change beforePath="$PROJECT_DIR$/src/pages/Cats/Cats.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Cats/Cats.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="449f5e20-19bd-4483-9f55-cd753c5bba67" name="Changes" comment="fix: Sidebar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +60,7 @@
       <updated>1655539142545</updated>
       <workItem from="1655539144395" duration="128000" />
       <workItem from="1655539283317" duration="25000" />
-      <workItem from="1655539362948" duration="13707000" />
+      <workItem from="1655539362948" duration="14044000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1655539765309</created>
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655552981282</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: Sidebar">
+      <created>1655553376799</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655553376799</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +119,7 @@
     <MESSAGE value="add: catsApi" />
     <MESSAGE value="feat: header, sidebar, card" />
     <MESSAGE value="feat: Cats, Button" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Cats, Button" />
+    <MESSAGE value="fix: Sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Sidebar" />
   </component>
 </project>
